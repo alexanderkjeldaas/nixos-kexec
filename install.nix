@@ -68,7 +68,7 @@ in {
       }
       EOF
 
-      nixos-install --no-root-passwd -j 4
+      nixos-install --no-root-passwd
       reboot
     '';
     environment.systemPackages = [ config.system.build.justdoit ];
